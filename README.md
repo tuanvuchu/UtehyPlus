@@ -15,7 +15,7 @@ Một công cụ mở rộng cho trang web sinh viên UTEHY
 **Hoặc có thể tải bản dựng sẵn tại phần Releases**
 
 <ol>
-  <li>Tải source code: Sử dụng <code>git clone &lt;repo-url&gt;</code> để lấy mã nguồn, hoặc tải file ZIP và giải nén vào máy tính.</li>
+  <li>Tải source code: Sử dụng <pre><code>git clone https://github.com/tuanvuchu/Thi.git</code></pre> để lấy mã nguồn, hoặc tải file ZIP và giải nén vào máy tính.</li>
   <li>Cài đặt các module: Vào thư mục project và chạy lệnh:</li>
   <pre><code>npm install</code></pre>
   <p>để cài đặt tất cả các dependency cần thiết.</p>
