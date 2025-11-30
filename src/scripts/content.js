@@ -72,7 +72,7 @@ const handlers = [
       const passwordInput = document.getElementById("login-password");
       passwordInput.parentElement.insertAdjacentElement(
         "afterend",
-        autoLoginDiv,
+        autoLoginDiv
       );
     },
   },
@@ -95,7 +95,7 @@ const handlers = [
         iconDownloadTimetable.classList.add("fa", "fa-download");
         linkDownloadTimetable.appendChild(iconDownloadTimetable);
         linkDownloadTimetable.appendChild(
-          document.createTextNode(" Tải lịch học"),
+          document.createTextNode(" Tải lịch học")
         );
 
         downloadTimetable.appendChild(linkDownloadTimetable);
@@ -152,7 +152,7 @@ const handlers = [
 
         linkPassEvaluation.appendChild(iconPassEvaluation);
         linkPassEvaluation.appendChild(
-          document.createTextNode(" Xem điểm ngay"),
+          document.createTextNode(" Xem điểm ngay")
         );
         passEvaluationTd.appendChild(linkPassEvaluation);
 
@@ -182,7 +182,7 @@ handlers.forEach((p) => {
 function autoFill() {
   const tds = document.querySelectorAll("td");
   const matched = Array.from(tds).filter(
-    (td) => td.textContent.trim() === "Rất đồng ý",
+    (td) => td.textContent.trim() === "Rất đồng ý"
   );
   matched.forEach((td) => {
     const radio = td.querySelector('input[type="radio"]');
@@ -235,7 +235,7 @@ function passEvaluation() {
 
 function formatData() {
   const tables = document.querySelectorAll(
-    ".table.table-bordered.table-condensed",
+    ".table.table-bordered.table-condensed"
   );
 
   for (const table of tables) {
@@ -266,7 +266,7 @@ function formatData() {
 
     table
       .querySelectorAll(
-        'td[style*="width: 180px"], td[style*="width: 80px"], td[style*="width:35px"]',
+        'td[style*="width: 180px"], td[style*="width: 80px"], td[style*="width:35px"]'
       )
       .forEach((td) => td.remove());
 
